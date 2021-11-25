@@ -1,0 +1,10 @@
+.usersData>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentsData button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+}

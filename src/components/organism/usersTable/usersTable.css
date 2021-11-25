@@ -1,0 +1,35 @@
+.moreInfoCell {
+    position: relative;
+}
+
+.moreInfoCell::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 2;
+    background-image: url(../../atoms//table/infoIcon.svg);
+}
+
+.moreInfoCell span {
+    width: 150px;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: 1px rgba(35, 35, 35, 0.15) solid;
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 3;
+    font-size: 14px;
+    text-align: center;
+    transition: ease .3s;
+}
+
+.moreInfoCell:hover span {
+    opacity: 1;
+    transition: ease .3s;
+}
